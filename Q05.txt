@@ -1,0 +1,17 @@
+#Execute a Python Script Directly
+#https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tg
+
+echo "#!/usr/bin/env python3" >> hello.py
+echo "print('Hello from Python')" >> hello.py
+chmod 777 hello.py
+./hello.py
+
+Approach:
+1. First, I used the "echo" command with ">>" to add the Python shebang line to "hello.py".
+2. I added the statement print('Hello from Python') to the same file using the "echo" command.
+3. I used the "chmod" command to set the permissions of "hello.py" to "777", allowing everyone to read, write, and execute the file.
+4. Finally, I executed the Python script using "./hello.py" to display the output.
+Result:
+The "hello.py" file was created with a Python shebang line and a print statement. 
+Its permissions were set to "777". 
+When executed, the script displays "Hello from Python" on the terminal.
