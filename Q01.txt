@@ -1,0 +1,28 @@
+#AdvancedFileManagement
+#https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+
+mkdir project-files
+cd project-files
+touch report.docx summary.docx draft.docx
+cp report.docx report_backup.docx
+mkdir old
+mv draft.docx old
+mv summary.docx final_summary.docx
+cp final_summary.docx old
+rm report_backup.docx
+ls
+
+Approach:-
+1. First, I created a directory named "project-files" using the "mkdir" command and entered it using "cd".
+2. I created three empty files: "report.docx", "summary.docx", and "draft.docx" using the "touch" command.
+3. I created a backup copy of "report.docx" named "report_backup.docx" using the "cp" command.
+4. I created a directory named "old" using "mkdir" and moved "draft.docx" into it using "mv".
+5. I renamed "summary.docx" to "final_summary.docx" using the "mv" command.
+6. I copied "final_summary.docx" into the "old" directory using the "cp" command.
+7. I deleted "report_backup.docx" using the "rm" command.
+8. Finally, I used the "ls" command to list the contents of the current directory and check the result.
+Result:-
+The "project-files" directory contains "final_summary.docx" and the "old" directory.
+The "old" directory contains "draft.docx" and a copy of "final_summary.docx".
+The original "summary.docx" was renamed, and "report_backup.docx" was deleted.
+The "report.docx" file remains in the main directory.
