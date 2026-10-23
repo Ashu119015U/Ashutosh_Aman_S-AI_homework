@@ -1,4 +1,6 @@
-# your code goes here
+#Data Breach Response
+#https://my.newtonschool.co/playground/code/orlr84xpc3oo?lecture_hash=vifkrugjcwth
+
 cd breach_response
 cp evidence/log_dump.txt log_dump.txt
 #ls -l
