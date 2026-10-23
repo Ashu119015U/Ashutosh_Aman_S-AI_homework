@@ -1,0 +1,38 @@
+#Deployment Project Permissions
+#https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+
+#ls -l deployment/app
+chmod 700 deployment/app/handler.py 
+chmod 700 deployment/app/server.py 
+chmod 700 deployment/app/settings.py
+#ls -l deployment/app
+#ls -l deployment/datasets/
+chmod 770 deployment/datasets 
+chmod 770 deployment/datasets/test.csv
+chmod 770 deployment/datasets/train.csv
+#ls -l deployment/datasets/
+#ls -l deployment/docs/OVERVIEW.md
+chmod 644 deployment/docs/OVERVIEW.md
+#ls -l deployment/docs/OVERVIEW.md
+#ls -l deployment/bin/
+chmod 755 deployment/bin/healthcheck.sh
+chmod 755 deployment/bin/start.sh
+chmod 755 deployment/bin/stop.sh
+#ls -l deployment/bin/
+
+Approach:
+1. First, I checked the permissions of the files inside the "deployment/app" directory using the "ls -l" command.
+2. I changed the permissions of "handler.py", "server.py", and "settings.py" to "700" using the "chmod" command, allowing only the owner to read, write, and execute these files.
+3. I checked the permissions of the "deployment/datasets" directory and changed its permissions to "770".
+4. I changed the permissions of "test.csv" and "train.csv" to "770", allowing the owner and group to read, write, and execute these files.
+5. I changed the permissions of "OVERVIEW.md" to "644", allowing the owner to read and write while others can only read the file.
+6. I changed the permissions of "healthcheck.sh", "start.sh", and "stop.sh" to "755", allowing the owner to read, write, and execute them, while others can read and execute them.
+7. Finally, I used the "ls -l" command to verify the permissions of the files and directories.
+
+Result:
+
+The "deployment/app" directory contains "handler.py", "server.py", and "settings.py" with permissions set to "700". 
+The "deployment/datasets" directory and its files, "test.csv" and "train.csv", have permissions set to "770". 
+The "deployment/docs/OVERVIEW.md" file has permissions set to "644". 
+The "deployment/bin" directory contains "healthcheck.sh", "start.sh", and "stop.sh" with permissions set to "755".
+
